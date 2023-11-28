@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0" client="site" method="upgrade">
+	<name>mod_jlms_menus</name>
+	<author>iJoomla</author>
+	<creationDate>April 28, 2022</creationDate>
+	<copyright>(C) 2015 iJoomla.com</copyright>
+	<license>GPL V2</license>
+	<authorUrl>www.ijoomla.com</authorUrl>
+	<authorEmail>webmaster2@ijoomla.com</authorEmail>
+	<version>2.0.1</version>
+	<description>MOD_JLMS_MENUS_XML_DESCRIPTION.</description>
+	
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_jlms_menus.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.mod_jlms_menus.sys.ini</language>
+		<language tag="es-ES">language/es-ES/mod_jlms_menus.ini</language>
+		<language tag="es-ES">language/es-ES/mod_jlms_menus.sys.ini</language>
+	</languages>
+	
+	<files>
+		<filename module="mod_jlms_menus">mod_jlms_menus.php</filename>
+        <folder>assets</folder>
+		<folder>language</folder>
+        <folder>src</folder>
+        <folder>tmpl</folder>
+    </files>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="basic" label="COM_MODULES_BASIC_FIELDSET_LABEL">
+				<field name="show_courses" type="radio" class="btn-group" default="0" label="MOD_GURU_SHOW_COURSES" description="">
+					<option value="0">MOD_NO</option>
+					<option value="1">MOD_YES</option>
+				</field>
+			</fieldset>
+			
+			<fieldset name="advanced">
+				<field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>
